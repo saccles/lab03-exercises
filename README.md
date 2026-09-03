@@ -93,11 +93,25 @@ listed as modified and not as untracked.
 In one or two sentences each, what does each command do?
 
 - `git init`
+    This command initializes a new git repository in the current directory.
 - `git status`
+    This command shows you the current status of your git repository. It
+    also shows you the branch your on as well as untracked and tracked files
+    and file changes.
 - `git add`
+    This command adds the specified files (or . to add all) to the staging
+    area.
 - `git commit`
+    This command commits your changes to git (now shown as commit with hash
+    in git log and git history).
 - `git log`
+    This command shows you your git history (essentially a list of commits
+    with respective commit hashes).
 - `git diff`
+    This command shows changes to files (in green) that have not yet been
+    committed to the git history. For instance, if you accidentally deleted
+    a file but did not yet commit the change, you can usually easily undo it
+    by reverting to the previous commit.
 
 ### 1.7 Repository link
 
