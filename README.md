@@ -122,8 +122,29 @@ https://github.com/saccles/lab03-exercises
 In your own words:
 
 - How does the nested-loop approach check for a duplicate?
+    The nested approach uses an outer loop to change the index
+    (index that matches up with the current item being checked for a match)
+    and inner loop to compare all other items (except items
+    at index <= outer loop index) at different indices in the array 
+    starting at the outer loop index + 1 to the current item to see if
+    there is another match. If there is a match, the function immediately
+    returns true. Otherwise, this process is repeated until a match is found
+    or until the outer and inner loops have finished checking the array,
+    then returning false if no duplicate value was found.
 - How does the set-based approach check for a duplicate?
+    Since sets cannot store duplicate values, the program monitors the
+    return code of the method that adds an item to a set for failure. If
+    the return code indicates failure, then that means the item that the
+    program intended to add to the set was already present in the set,
+    indicating that this is a duplicate value, stopping the program 
+    and returning true.
 - What is the runtime and memory trade-off of each?
+    The nested-loop aproach has worse runtime (O(n^2)) and the set-based 
+    approach has better runtime (O(n)).
+    The set-based approach uses more space though (sets are generally implemented 
+    using hash tables, which take up more memory compared to arrays).
+    The nested-loop approach uses less space since it is operating only on
+    one array and arrays are more space-efficient than sets. 
 
 ### 1.9 Pull request merge options
 
