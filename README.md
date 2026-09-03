@@ -151,5 +151,17 @@ In your own words:
 In your own words, what does each GitHub merge option do?
 
 - Create a merge commit
+    A merge commit simply creates a new commit that is linked to your last
+    feature branch commit as well as the last update on the main branch
+    or the last commit from your collaborator, transforming the tree of 
+    your commits into a more graph-like structure.
 - Squash and merge
+    Squash and merge squeezes all of your last commits into a commit that
+    directly follows the last commit carried out by your collaborator, with
+    head and your branch both pointing to this commit.
 - Rebase and merge
+    Rebase and merge starts off with the last commit made by your 
+    collaborator and reapplies all of your commits on top of your 
+    collaborator's last commit. Then HEAD is updated to point to your
+    last commit (sort of a linked list-like structure).
+
