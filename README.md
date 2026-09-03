@@ -115,6 +115,8 @@ In one or two sentences each, what does each command do?
 
 ### 1.7 Repository link
 
+https://github.com/saccles/lab03-exercises
+
 ### 1.8 Comparing approaches
 
 In your own words:
