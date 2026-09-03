@@ -1,5 +1,8 @@
 # Lab 03: Git and GitHub
 
+This repository documents my practice with 
+local Git, GitHub, branches, and pull requests.
+
 ## README Responses
 
 ### 1.1 After initialization
@@ -27,13 +30,63 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ### 1.3 After the first commit
 
+git status   
+On branch main
+nothing to commit, working tree clean
+
 ### 1.4 git log
+
+git log --oneline
+84cbf78 (HEAD -> main) Create lab README
 
 ### 1.5 git diff
 
-Paste the `git status` and `git diff` commands and their output.
+git status       
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+git diff  
+diff --git a/README.md b/README.md
+index 090962f..30d5415 100644
+--- a/README.md
++++ b/README.md
+@@ -1,5 +1,8 @@
+ # Lab 03: Git and GitHub
+ 
++This repository documents my practice with 
++local Git, GitHub, branches, and pull requests.
++
+ ## README Responses
+ 
+ ### 1.1 After initialization
+@@ -27,8 +30,15 @@ nothing added to commit but untracked files present (use "git add" to track)
+ 
+ ### 1.3 After the first commit
+ 
++git status   
++On branch main
++nothing to commit, working tree clean
++
+ ### 1.4 git log
+ 
++git log --oneline
++84cbf78 (HEAD -> main) Create lab README
++
+ ### 1.5 git diff
+ 
+ Paste the `git status` and `git diff` commands and their output.
 
 How does this `git status` differ from the one in **1.2**?
+In the git status from 1.2, the command displays that no commits have yet
+been made. Also a list of untracked files is displayed with README.md being
+one of them.  However, in the git status from 1.5, the command displays that
+changes have been made but not staged for the commit. Also README.md is now
+listed as modified and not as untracked.
 
 ### 1.6 Git command reflections
 
